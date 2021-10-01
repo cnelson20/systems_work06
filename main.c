@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define PRINTARRAY(a) printf("{");do{int i; for(i = 0; i < (sizeof(a)/sizeof(a[0])); i++) {if(i!=0){printf(", ");}printf("%d",a[i]);}printf("}\n");} while (0);
+
 int main() {
   int array[10];
   array[0] = 0;
